@@ -16,20 +16,15 @@ public class GameController : MonoBehaviour
     {
         valueChangerSlider = GameObject.Find("ValueChangerSlider").GetComponent<Slider>();
         Value = GameObject.FindWithTag("GameController").GetComponent<AddToChild>().changeValueOfScript;
-        //valueMixer = .Load("Audio/GameAudioMixer") as AudioMixer;
         
-      // var Valuee = GetComponent<AddToChild>();
+      
     }
 
-   // void Start()
-   // {
-        //valueChangerSlider.value = Value;
-    //}
-
+   
     public void ChangeValueSlider()
     {
         Value = valueChangerSlider.value * 1f;
-        // Write to PlayerPrefs if you wanted...
+        
     }
 
     // Update is called once per frame

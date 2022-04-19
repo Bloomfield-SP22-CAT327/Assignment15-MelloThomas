@@ -20,8 +20,8 @@ public class AddToChild : MonoBehaviour
 
     void AttachScript(GameObject target)
     {
-        ScriptBeingAdded sos = target.AddComponent<ScriptBeingAdded>();
-        sos.valueOfScript = changeValueOfScript;
+        ScriptBeingAdded Added = target.AddComponent<ScriptBeingAdded>();
+        Added.valueOfScript = changeValueOfScript;
 
     }
     void DettachScript()
